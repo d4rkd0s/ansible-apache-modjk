@@ -1,2 +1,5 @@
 ---
 # tasks file for apache-modjk
+- include: prepare.yml
+- include: build.yml
+- include: finalize.yml
