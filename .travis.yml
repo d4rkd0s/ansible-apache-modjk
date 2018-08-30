@@ -21,6 +21,7 @@ install:
   # Install Ansible.
   - if [ "$ANSIBLE_VERSION" = "latest" ]; then pip install ansible; else pip install ansible==$ANSIBLE_VERSION; fi
   - if [ "$ANSIBLE_VERSION" = "latest" ]; then pip install ansible-lint; fi
+  - ansible-galaxy install geerlingguy.apache
 
 script:
   # Check the role/playbook's syntax.
