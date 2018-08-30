@@ -1,5 +1,5 @@
 galaxy_info:
-  role_name: apache-modjk
+  role_name: modjk
   author: d4rkd0s
   description: Ansible role that installs apache, compiles and sets up mod_jk, used for connecting to a Java application server. Uses ggeerlingguy/ansible-role-apache for base apache installation.
   company: TGen
