@@ -3,7 +3,7 @@ galaxy_info:
   description: Ansible role that installs apache, compiles and sets up mod_jk, used for connecting to a Java application server. Uses ggeerlingguy/ansible-role-apache for base apache installation.
   company: TGen
   license: MIT
-  min_ansible_version: 1.2
+  min_ansible_version: 2.4
   github_branch: master
   platforms:
     - name: EL
