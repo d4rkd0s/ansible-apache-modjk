@@ -25,4 +25,4 @@ galaxy_info:
     - "java"
 
 dependencies:
-  - { role: geerlingguy/ansible-role-apache }  
+  - { role: geerlingguy.apache }  
