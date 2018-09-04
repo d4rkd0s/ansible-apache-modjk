@@ -1,8 +1,10 @@
 ---
-- name: Running ./configure for mod_jk
-  command: '"{{ item }}" chdir=/tmp/modjk/tomcat-connectors-1.2.44-src/native/'
-  with_items:
-    - ./configure --with-apxs=/usr/sbin/apxs
+- name: Find apxs folder
+  command: 'find / -name apxs'
+# - name: Running ./configure for mod_jk
+#   command: '"{{ item }}" chdir=/tmp/modjk/tomcat-connectors-1.2.44-src/native/'
+#   with_items:
+#     - ./configure --with-apxs=/usr/sbin/apxs
 # - name: Running "make" for mod_jk
 #   command: '"{{ item }}" chdir=/tmp/modjk/tomcat-connectors-1.2.44-src/native/'
 #   with_items:
