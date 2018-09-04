@@ -4,34 +4,7 @@ ansible-apache-modjk
 Travis CI Build Status 
 [![Build Status](https://travis-ci.org/d4rkd0s/ansible-apache-modjk.svg?branch=master)](https://travis-ci.org/d4rkd0s/ansible-apache-modjk)
 
-Ansible role that installs apache, compiles and sets up mod_jk, used for connecting to a Java application server. Uses ggeerlingguy/ansible-role-apache for base apache installation.
-
-Requirements
-------------
-
-Currently none, will eventually define whats needed.
-
-Role Variables
---------------
-
-Currently none, will eventually expose whats needed from geerlingguy/ansible-role-apache
-
-Dependencies
-------------
-
-**geerlingguy/ansible-role-apache**
-
-Used to install Apache
-
-Example Playbook
-----------------
-
-Example playbook coming soon.
-
-License
--------
-
-MIT
+Ansible role that installs apache locally, compiles mod_jk locally, used by apache to connect to a Java application server. 
 
 Author Information
 ------------------
