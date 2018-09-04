@@ -14,4 +14,3 @@
     src: tmp/tomcat-connectors-1.2.44-src.tar.gz
     dest: tmp/modjk/
     list_files: yes
-    extra_opts: 
