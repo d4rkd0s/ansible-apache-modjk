@@ -1,2 +1,3 @@
 ---
-# prepare tasks for apache-modjk
+- name: Creates tmp/ directory
+  file: path=./tmp/ state=directory
