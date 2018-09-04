@@ -17,9 +17,9 @@
     dest: /tmp/modjk/
     list_files: yes
 
-- name: Install apache2 development apache-dev
+- name: Install apache2 development apache2-dev
   apt:
-    name: apache-dev
+    name: apache2-dev
     state: present
   when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
 
