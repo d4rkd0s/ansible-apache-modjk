@@ -17,9 +17,16 @@
     dest: /tmp/modjk/
     list_files: yes
 
+- name: Install apache2 development apache-dev
+  apt:
+    name: apache-dev
+    state: present
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
 - name: Install apache2 development httpd-devel
-  package:
+  yum:
     name: httpd-devel
     state: present
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
 
 # - name: Check apache has DSO support
