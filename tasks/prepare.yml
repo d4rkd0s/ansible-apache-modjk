@@ -5,5 +5,5 @@
 - name: Download mod_jk source 1.2.44 locally with check (sha256)
   get_url:
     url: http://mirrors.sonic.net/apache/tomcat/tomcat-connectors/jk/tomcat-connectors-1.2.44-src.tar.gz
-    dest: ./tmp/
+    dest: ./tmp/tomcat-connectors-1.2.44-src.tar.gz
     checksum: sha512:3fcb291a5cdc4fded4a7b5570572ac6dcc0016b880c12199c0669905f526f43a6f87608a49defed274a509021bb9763997c51ca4ad7f659b650ffc362c510f61
