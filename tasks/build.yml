@@ -1,9 +1,4 @@
 ---
-- name: Find apxs folder
-  find:
-    paths: apxs
-    recurse: yes
-    file_type: directory
 # - name: Running ./configure for mod_jk
 #   command: '"{{ item }}" chdir=/tmp/modjk/tomcat-connectors-1.2.44-src/native/'
 #   with_items:

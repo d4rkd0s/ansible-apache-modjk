@@ -17,4 +17,9 @@
     dest: /tmp/modjk/
     list_files: yes
 
+- name: Install apache2 development httpd-devel
+  yum:
+    name: httpd-devel
+    state: latest
+    
 # - name: Check apache has DSO support
