@@ -18,8 +18,8 @@
     list_files: yes
 
 - name: Install apache2 development httpd-devel
-  yum:
+  package:
     name: httpd-devel
-    state: latest
-    
+    state: present
+
 # - name: Check apache has DSO support
