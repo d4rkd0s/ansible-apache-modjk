@@ -1,8 +1,16 @@
 ---
-- name: Running ./configure for mod_jk
+- name: Running ./configure for mod_jk (for CentOS/RHEL /usr/bin/apxs)
   command: '"{{ item }}" chdir=/tmp/modjk/tomcat-connectors-1.2.44-src/native/'
   with_items:
     - ./configure --with-apxs=/usr/sbin/apxs
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+
+- name: Running ./configure for mod_jk (for CentOS/RHEL /usr/bin/apxs)
+  command: '"{{ item }}" chdir=/tmp/modjk/tomcat-connectors-1.2.44-src/native/'
+  with_items:
+    - ./configure --with-apxs=/usr/sbin/apxs
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
 # - name: Running "make" for mod_jk
 #   command: '"{{ item }}" chdir=/tmp/modjk/tomcat-connectors-1.2.44-src/native/'
 #   with_items:
